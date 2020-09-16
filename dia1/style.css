@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lista{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+ul li{
+    /* background: #ccc; */
+    position: relative;
+    list-style: none;
+    margin: 0 30px;
+    height: 40px;
+    width: 40px;
+    /* transform:rotate(-30deg) skew(25deg); */
+    border-radius: 10px;
+}
+
+ul li span{
+    background: #000;
+    display: flex !important;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:0.5s;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+    border-radius: 50px;
+    position: absolute;
+}
+
+ul li span img{
+    width: 100%;
+}
+ul li:hover span{
+    box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+}
+
+ul li:hover span:nth-child(7)
+{
+    transform: translate(80px, -80px) rotate(360deg) scale(2.4);
+    opacity: 1;
+}
+ul li:hover span:nth-child(6)
+{
+    transform: translate(60px, -60px) scale(2);
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(5)
+{
+    transform: translate(50px, -50px) scale(1.8);
+    opacity: 0.5;
+}
+ul li:hover span:nth-child(4)
+{
+    transform: translate(40px, -40px) scale(1.6);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(3)
+{
+    transform: translate(30px, -30px) scale(1.4);
+    opacity: 0.3;
+}
+ul li:hover span:nth-child(2)
+{
+    transform: translate(20px, -20px) scale(1.2);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(1)
+{
+    transform: translate(10px,-10px);
+    opacity: .2;
+}
+
+ul li:nth-child(1) span
+{
+    background: #ffff00;
+    opacity: 0.9;
+}
+ul li:nth-child(2) span
+{
+    background: #55acee;
+}
+ul li:nth-child(3) span
+{
+    background: #dd4b39;
+}
+ul li:nth-child(4) span
+{
+    background: #0077b5;
+}
+ul li:nth-child(5) span
+{
+    background: #e4405f;
+    transform:rotate(0deg);
+}
+
+.credito{
+    display: flex;
+    justify-content: center;
+}
