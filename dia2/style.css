@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+}
+body div{
+    margin: 40px;
+}
+.spinner{
+    top: 100px;
+    position: relative;
+    border: 8px solid rgba(0,0,0,0.1);
+    border-left-color: #22a6b3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Loader de retangulos */
+.retangulos{
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.retangulos span{
+    background: #3F87A6;
+    margin:5px;
+    width: 10px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.retangulos span:nth-child(1){
+    animation: slidein 2s infinite;
+    animation-delay: 1s;
+}
+.retangulos span:nth-child(2){
+    animation: slidein 2s infinite;
+    animation-delay: 2s;
+}
+.retangulos span:nth-child(3){
+    animation: slidein 2s infinite;
+    animation-delay: 1s;
+}
+.retangulos span:nth-child(4){
+    animation: slidein 2s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes slidein {
+    /* from { transform: scaleX(1); } */
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1, 2); }
+    100%{ transform: scale(1); }
+}
+
+/* Linhas */
+
+.linhas{
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.linhas span{
+    background: #3F87A6;
+    margin:5px;
+    width: 10px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.linhas span:nth-child(1){
+    animation: slidein1 2s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.linhas span:nth-child(2){
+    animation: slidein2 2s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.linhas span:nth-child(3){
+    animation: slidein3 2s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+.linhas span:nth-child(4){
+    animation: slidein4 2s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes slidein1 {
+    /* from { transform: scaleX(1); } */
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1, 2); }
+    70%{ transform: scale(1); }
+}
+@keyframes slidein2 {
+    /* from { transform: scaleX(1); } */
+    20%{ transform: scale(1); }
+    50%{ transform: scale(1, 2); }
+    80%{ transform: scale(1); }
+}
+@keyframes slidein3 {
+    /* from { transform: scaleX(1); } */
+    30%{ transform: scale(1); }
+    50%{ transform: scale(1, 2); }
+    90%{ transform: scale(1); }
+}
+@keyframes slidein4 {
+    /* from { transform: scaleX(1); } */
+    40%{ transform: scale(1); }
+    50%{ transform: scale(1, 2); }
+    100%{ transform: scale(1); }
+}
+
+@keyframes slidedown1 {
+    /* from { transform: scaleX(1); } */
+    0%{ transform: scale(1); }
+    100%{ transform: scale(1, 2); }
+}
+@keyframes slidedown2 {
+    /* from { transform: scaleX(1); } */
+    20%{ transform: scale(1); }
+    100%{ transform: scale(1, 2); }
+}
+@keyframes slidedown3 {
+    /* from { transform: scaleX(1); } */
+    30%{ transform: scale(1); }
+    100%{ transform: scale(1, 2); }
+}
+@keyframes slidedown4 {
+    /* from { transform: scaleX(1); } */
+    40%{ transform: scale(1); }
+    100%{ transform: scale(1, 2); }
+}
+
+/* .linhas{
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.linhas span{
+    background: #3F87A6;
+    margin:5px;
+    width: 10px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.linhas span:nth-child(1){
+    animation: infinite;
+    animation-name: up, down;
+    animation-duration: 2000ms, 1000ms;
+    animation-delay: 1s;
+}
+.linhas span:nth-child(2){
+    animation: infinite;
+    animation-name: up, down;
+    animation-duration: 2000ms, 1000ms;
+    animation-delay: 2s;
+}
+.linhas span:nth-child(3){
+    animation: infinite;
+    animation-name: up, down;
+    animation-duration: 2000ms, 1000ms;
+    animation-delay: 1s;
+}
+.linhas span:nth-child(4){
+    animation: infinite;
+    animation-name: up, down;
+    animation-duration: 2000ms, 1000ms;
+    animation-delay: 2s;
+} */
+
+/* @keyframes up {
+    0%{ transform: scale(1); }
+    100%{ transform: scale(1, 2); }
+}
+
+@keyframes down {
+    to{
+        transform:scale(1) ;
+    }
+} */
