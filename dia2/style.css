@@ -12,7 +12,7 @@ body div{
     top: 100px;
     position: relative;
     border: 8px solid rgba(0,0,0,0.1);
-    border-left-color: #22a6b3;
+    border-left-color: #263238;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -33,7 +33,7 @@ body div{
     justify-content: center;
 }
 .retangulos span{
-    background: #3F87A6;
+    background: #BF360C;
     margin:5px;
     width: 10px;
     height: 50px;
@@ -73,7 +73,7 @@ body div{
     justify-content: center;
 }
 .linhas span{
-    background: #3F87A6;
+    background: #1B5E20;
     margin:5px;
     width: 10px;
     height: 50px;

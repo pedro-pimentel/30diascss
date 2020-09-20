@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.pulsar{
+    position: absolute;
+    top: 30%;
+    background: rgb(59, 175, 88);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    line-height: 100px;
+    border-radius: 50%;
+    /* box-shadow: 10px 10px 10px 10px rgba(194, 25, 25, 0.2); */
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        /* transform:scale(1); */
+        box-shadow: 0px 0px 0px 15px rgba(59, 175, 88,0.7);
+    }
+    40%{
+        /* transform:scale(1.2); */
+        box-shadow: 0px 0px 0px 10px  rgba(59, 175, 88,0.7);
+    }
+    80%{
+        /* transform:scale(1.1); */
+        box-shadow: 0px 0px 0px 20px  rgba(59, 175, 88,0.5);
+    }
+    100%{
+        /* transform:scale(1); */
+        box-shadow: 0px 0px 0px 30px  rgba(59, 175, 88,0.4);
+    }
+}
