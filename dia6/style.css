@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #278ea5;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    top: 40%;
+    position: absolute;
+}
+
+ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #071e3d;
+    animation:lumus 1.4s linear infinite;
+}
+
+@keyframes lumus{
+    0%{
+        color:#071e3d;
+    }
+    90%{
+        color:#071e3d;
+    }
+    100%{
+        color:#f4fa9c;
+        text-shadow: 0 0 7px #278ea5, 0 0 50px #ff6c00;
+    }
+}
+
+ul li:nth-child(1) 
+{
+	animation-delay: 0s
+}
+
+ul li:nth-child(2) 
+{
+	animation-delay: 0.1s
+}
+
+ul li:nth-child(3) 
+{
+	animation-delay: 0.2s
+}
+
+ul li:nth-child(4) 
+{
+	animation-delay: 0.3s
+}
+
+ul li:nth-child(5) 
+{
+	animation-delay: 0.4s
+}
+
+ul li:nth-child(6) 
+{
+	animation-delay: 0.5s
+}
+
+ul li:nth-child(7) 
+{
+	animation-delay: 0.6s
+}
+
+ul li:nth-child(8) 
+{
+	animation-delay: 0.7s
+}
+
+ul li:nth-child(9) 
+{
+	animation-delay: 0.8s
+}
+
+ul li:nth-child(10) 
+{
+	animation-delay: 0.9s
+}
+
+ul li:nth-child(11) 
+{
+	animation-delay: 1s
+}
