@@ -25,12 +25,12 @@ span{
     animation:danca 2s linear infinite;
 }
 
-span:nth-child(2){
+/* span:nth-child(2){
     animation-delay: 0.7s;
 }
 span:nth-child(1){
     animation-delay: 1.4s;
-}
+} */
 
 @keyframes danca{
     0% {top: 0; left: 0;}
