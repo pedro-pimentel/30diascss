@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:#c5e3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body button{
+    background:none;
+    border: 2px solid rgba(226, 151, 151, 1);
+    border-radius: 5px;
+    width:300px;
+    height:50px;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: absolute;
+    overflow: hidden;
+}
+
+button::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 165, 124);
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    height: 0%;
+    transition: all 0.5s;
+}
+button:hover::before{
+    height: 190%;
+}

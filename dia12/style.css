@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #107a8b;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    position: absolute;
+    top:40%;
+    color: #2cb978;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+h1::before{
+    content:"#30diasdecss";
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width: 0%;
+    color:#83e85a;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+h1:hover::before{
+    width: 100%;
+}
