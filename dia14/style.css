@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background:#f0f0f0;
+}
+
+h1 {
+	position: absolute;
+    top: 20%;
+    font-size: 200px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:20px;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(img/science.png);
+    animation: text-background 20s linear infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes text-background {
+
+	from { background-position: 0 0 }
+
+	to { background-position: 100% 100% }
+
+} 

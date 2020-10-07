@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+body ul{
+    display: flex;
+    position: absolute;
+    top: 40%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 50px;
+    /* font-weight: bold; */
+    font-family: 'Press Start 2P', cursive;
+    margin:5px;
+    transition:2s;
+}
+ul li:nth-child(4) {
+    margin-left:40px;
+}
+
+ul:hover li{
+    transform: rotate(45deg) translateY(-200px);
+	opacity: 0;
+	filter: blur(20px);
+}
+
+ul li:nth-child(1) {
+	transition-delay: 0;
+}
+
+ul li:nth-child(2) {
+	transition-delay: 0.4s;
+}
+
+ul li:nth-child(3) {
+	transition-delay: 0.8s;
+}
+
+ul li:nth-child(4) {
+	transition-delay: 1.2s;
+}
+
+ul li:nth-child(5) {
+	transition-delay: 1.6s;
+}
